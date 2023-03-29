@@ -76,11 +76,14 @@
     }
 
     .homepage img{
+        width: 70%;
+        height: 70%;
         margin-bottom: 10%;
     }
 
     .home-container{
         width: 60%;
+        margin-top: 20%;
     }
 }
 
@@ -96,6 +99,17 @@
         font-family: 'Roboto', sans-serif;
         font-size: 24px;
     }
+
+    .homepage img{
+        width: 35%;
+        height: 45%;
+        margin-bottom: 10%;
+    }
+
+    .home-container{
+        width: 60%;
+        margin-top: 10%;
+    }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -109,5 +123,10 @@
     .homepage p{
         font-family: 'Roboto', sans-serif;
         font-size: 25px;
+    }
+
+    .home-container{
+        width: 60%;
+        margin-top: 5%;
     }
 }
