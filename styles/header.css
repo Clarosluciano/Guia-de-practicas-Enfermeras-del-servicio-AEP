@@ -19,12 +19,12 @@
 
 .fix-header .header-items a{
     display: flex;
+    align-items: center;
 }
 
 .heca-logo{
     width: auto;
     height: 60%;
-    margin-top: 7%;
 }
 .muni-logo{
     width: auto;
@@ -40,7 +40,7 @@
     }
 
     .muni-logo{
-        margin-right: -4%;
+        margin-left: 40%;
     }
 }
 
