@@ -58,7 +58,7 @@
     background-color: #00000033;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 350px) {
     /* For mobiles */
 
     .homepage h1{
