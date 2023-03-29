@@ -57,3 +57,57 @@
     align-items: center;
     background-color: #00000033;
 }
+
+@media only screen and (min-width: 375px) {
+    /* For mobiles */
+
+    .homepage h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+    }
+
+    .homepage p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .homepage img{
+        margin-bottom: 10%;
+    }
+
+    .home-container{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    /* For tablets */
+
+    .homepage h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 31px;
+    }
+
+    .homepage p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    /* For desktops */
+
+    .homepage h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+    }
+
+    .homepage p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+    }
+}
