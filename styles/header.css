@@ -11,13 +11,12 @@
 
 .fix-header .header-items{
     display: flex;
-    
 }
 
 .fix-header .header-items:nth-child(1){
     width: 35%;
     height: 35%;
-    margin-left: 3%;
+    margin-left: 2%;
 }
 
 .fix-header .header-items:nth-child(2){
