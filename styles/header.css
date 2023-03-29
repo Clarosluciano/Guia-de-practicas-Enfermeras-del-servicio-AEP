@@ -10,15 +10,70 @@
 }
 
 .fix-header .header-items{
+    width: 25%;
+    height: 70%;
+    margin-left: 3%;
+    margin-right: 1%;
     display: flex;
 }
 
-.fix-header .header-items:nth-child(1){
-    width: 35%;
-    height: 35%;
-    margin-left: 2%;
+.fix-header .header-items a{
+    display: flex;
 }
 
-.fix-header .header-items:nth-child(2){
-    height: 70%;
+.heca-logo{
+    width: auto;
+    height: 60%;
+    margin-top: 7%;
+}
+.muni-logo{
+    width: auto;
+    height: 100%;
+    margin-right: -3%;
+}
+
+@media only screen and (min-width: 350px) {
+    /* For mobiles */
+
+    .heca-logo{
+        margin-left: 4%;
+    }
+
+    .muni-logo{
+        margin-right: -4%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+
+    .muni-logo{
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (min-width: 630px) {
+    .muni-logo{
+        margin-left: 50%;
+    }
+}
+
+@media only screen and (min-width: 830px) {
+
+    .muni-logo{
+        margin-left: 70%;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+
+    .muni-logo{
+        margin-left: 100%;
+    }
+}
+
+@media only screen and (min-width: 1420px) {
+
+    .muni-logo{
+        margin-left: 250%;
+    }
 }

@@ -130,3 +130,12 @@
         margin-top: 5%;
     }
 }
+
+@media only screen and (min-width: 1420px) {
+
+    .homepage img{
+        width: 35%;
+        height: 45%;
+        margin-bottom: 3%;
+    }
+}
