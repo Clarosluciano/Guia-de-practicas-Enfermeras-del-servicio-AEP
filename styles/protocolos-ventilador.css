@@ -16,7 +16,7 @@
 }
 
 section:nth-child(1){
-    margin-top: 14.4%;
+    margin-top: 14.3%;
 }
 
 .section p{
@@ -45,7 +45,7 @@ section:nth-child(1){
 .protocol-img{
     width: 80%;
     height: 30%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 .active{
