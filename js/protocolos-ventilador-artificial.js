@@ -6,9 +6,10 @@ window.onload = function () {
     var sectionFour = document.getElementById('SECTION_FOUR');
     var sectionFive = document.getElementById('SECTION_FIVE');
     var sectionSix = document.getElementById('SECTION_SIX');
+    var sectionSeven = document.getElementById('SECTION_SEVEN');
+    var sectionEight = document.getElementById('SECTION_EIGHT');
 
     var button = document.getElementsByClassName('button');
-
     var protocolsContainer = document.getElementsByClassName('protocols-container');
 
     //------------- LISTENERS
@@ -64,6 +65,24 @@ window.onload = function () {
         } else if (e.target && e.target.className === 'button button-little') {
             protocolsContainer[5].classList.remove('active');
             button[5].classList.remove('button-little');
+        }
+    })
+    sectionSeven.addEventListener('click', (e) => {
+        if (e.target && e.target.className === 'button') {
+            protocolsContainer[6].classList.add('active');
+            e.target.classList.add('button-little');
+        } else if (e.target && e.target.className === 'button button-little') {
+            protocolsContainer[6].classList.remove('active');
+            button[6].classList.remove('button-little');
+        }
+    })
+    sectionEight.addEventListener('click', (e) => {
+        if (e.target && e.target.className === 'button') {
+            protocolsContainer[7].classList.add('active');
+            e.target.classList.add('button-little');
+        } else if (e.target && e.target.className === 'button button-little') {
+            protocolsContainer[7].classList.remove('active');
+            button[7].classList.remove('button-little');
         }
     })
 
