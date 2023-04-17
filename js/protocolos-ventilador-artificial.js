@@ -1,19 +1,30 @@
 window.onload = function () {
     //------------- ELEMENTS
-    var sectionOne = document.getElementById('SECTION_ONE');
-    var sectionTwo = document.getElementById('SECTION_TWO');
-    var sectionThree = document.getElementById('SECTION_THREE');
-    var sectionFour = document.getElementById('SECTION_FOUR');
-    var sectionFive = document.getElementById('SECTION_FIVE');
-    var sectionSix = document.getElementById('SECTION_SIX');
-    var sectionSeven = document.getElementById('SECTION_SEVEN');
-    var sectionEight = document.getElementById('SECTION_EIGHT');
-    var sectionNine = document.getElementById('SECTION_NINE');
+    let sectionMain = document.querySelector('.section-main');
+    let sectionProtocols = document.querySelector('.section-protocols');
 
-    var button = document.getElementsByClassName('button');
-    var protocolsContainer = document.getElementsByClassName('protocols-container');
+    let sectionOne = document.getElementById('SECTION_ONE');
+    let sectionTwo = document.getElementById('SECTION_TWO');
+    let sectionThree = document.getElementById('SECTION_THREE');
+    let sectionFour = document.getElementById('SECTION_FOUR');
+    let sectionFive = document.getElementById('SECTION_FIVE');
+    let sectionSix = document.getElementById('SECTION_SIX');
+    let sectionSeven = document.getElementById('SECTION_SEVEN');
+    let sectionEight = document.getElementById('SECTION_EIGHT');
+    let sectionNine = document.getElementById('SECTION_NINE');
+
+    let buttonGuide = document.getElementById('BUTTON_GUIDE');
+    //let buttonBiblio = document.getElementById('BUTTON_BIBLIO');
+    let button = document.getElementsByClassName('button');
+    let protocolsContainer = document.getElementsByClassName('protocols-container');
 
     //------------- LISTENERS
+    sectionMain.addEventListener('click', (e) => {
+        if (e.target && e.target.className === 'button-main') {
+            sectionMain.classList.add('hide');
+            sectionProtocols.classList.remove('hide');
+        }
+    })
     sectionOne.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'button') {
             protocolsContainer[0].classList.add('active');
