@@ -56,8 +56,8 @@ section:nth-child(1){
 .section-main h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    font-size: 36px;
-    line-height: 47px;
+    font-size: 34px;
+    line-height: 40px;
     text-align: center;
     text-shadow: 1px, 1px, 4px, #000;
     margin-top: 3%;
@@ -70,7 +70,7 @@ section:nth-child(1){
 .section-main p{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 40px;
     text-align: justify;
     -webkit-text-stroke: 0.1px #000;
