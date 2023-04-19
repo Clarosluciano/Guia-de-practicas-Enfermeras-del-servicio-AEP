@@ -13,14 +13,14 @@ window.onload = function () {
     let sectionEight = document.getElementById('SECTION_EIGHT');
     let sectionNine = document.getElementById('SECTION_NINE');
 
-    let buttonGuide = document.getElementById('BUTTON_GUIDE');
+    //let buttonGuide = document.getElementById('BUTTON_GUIDE');
     //let buttonBiblio = document.getElementById('BUTTON_BIBLIO');
     let button = document.getElementsByClassName('button');
     let protocolsContainer = document.getElementsByClassName('protocols-container');
 
     //------------- LISTENERS
     sectionMain.addEventListener('click', (e) => {
-        if (e.target && e.target.className === 'button-main') {
+        if (e.target && e.target.id === 'BUTTON_GUIDE') {
             sectionMain.classList.add('hide');
             sectionProtocols.classList.remove('hide');
         }
