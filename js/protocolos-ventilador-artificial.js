@@ -7,6 +7,7 @@ window.onload = function () {
     let sectionTwo = document.getElementById('SECTION_TWO');
     let sectionThree = document.getElementById('SECTION_THREE');
     let sectionFour = document.getElementById('SECTION_FOUR');
+    let sectionExtra = document.getElementById('SECTION_EXTRA');
     let sectionFive = document.getElementById('SECTION_FIVE');
     let sectionSix = document.getElementById('SECTION_SIX');
     let sectionSeven = document.getElementById('SECTION_SEVEN');
@@ -61,7 +62,7 @@ window.onload = function () {
             button[3].classList.remove('button-little');
         }
     })
-    sectionFive.addEventListener('click', (e) => {
+    sectionExtra.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'button') {
             protocolsContainer[4].classList.add('active');
             e.target.classList.add('button-little');
@@ -70,7 +71,7 @@ window.onload = function () {
             button[4].classList.remove('button-little');
         }
     })
-    sectionSix.addEventListener('click', (e) => {
+    sectionFive.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'button') {
             protocolsContainer[5].classList.add('active');
             e.target.classList.add('button-little');
@@ -79,7 +80,7 @@ window.onload = function () {
             button[5].classList.remove('button-little');
         }
     })
-    sectionSeven.addEventListener('click', (e) => {
+    sectionSix.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'button') {
             protocolsContainer[6].classList.add('active');
             e.target.classList.add('button-little');
@@ -88,7 +89,7 @@ window.onload = function () {
             button[6].classList.remove('button-little');
         }
     })
-    sectionEight.addEventListener('click', (e) => {
+    sectionSeven.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'button') {
             protocolsContainer[7].classList.add('active');
             e.target.classList.add('button-little');
@@ -97,13 +98,22 @@ window.onload = function () {
             button[7].classList.remove('button-little');
         }
     })
-    sectionNine.addEventListener('click', (e) => {
+    sectionEight.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'button') {
             protocolsContainer[8].classList.add('active');
             e.target.classList.add('button-little');
         } else if (e.target && e.target.className === 'button button-little') {
             protocolsContainer[8].classList.remove('active');
             button[8].classList.remove('button-little');
+        }
+    })
+    sectionNine.addEventListener('click', (e) => {
+        if (e.target && e.target.className === 'button') {
+            protocolsContainer[9].classList.add('active');
+            e.target.classList.add('button-little');
+        } else if (e.target && e.target.className === 'button button-little') {
+            protocolsContainer[9].classList.remove('active');
+            button[9].classList.remove('button-little');
         }
     })
 
