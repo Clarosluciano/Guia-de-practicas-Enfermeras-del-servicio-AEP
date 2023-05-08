@@ -8,6 +8,7 @@ window.onload = function () {
     let sectionThree = document.getElementById('SECTION_THREE');
     let sectionFour = document.getElementById('SECTION_FOUR');
     let sectionFive = document.getElementById('SECTION_FIVE');
+    let sectionSix = document.getElementById('SECTION_SIX');
 
     let button = document.getElementsByClassName('button');
     let protocolsContainer = document.getElementsByClassName('protocols-container');
@@ -62,6 +63,15 @@ window.onload = function () {
         } else if (e.target && e.target.className === 'button button-little') {
             protocolsContainer[4].classList.remove('active');
             button[4].classList.remove('button-little');
+        }
+    })
+    sectionSix.addEventListener('click', (e) => {
+        if (e.target && e.target.className === 'button') {
+            protocolsContainer[5].classList.add('active');
+            e.target.classList.add('button-little');
+        } else if (e.target && e.target.className === 'button button-little') {
+            protocolsContainer[5].classList.remove('active');
+            button[5].classList.remove('button-little');
         }
     })
 }
