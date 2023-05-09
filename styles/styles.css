@@ -60,6 +60,18 @@ strong, b {
     background-color: #00000058;
 }
 
+.container-with-icons{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    height: 8%;
+    width: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
 .button-main{
     width: 40%;
     height: 50px;
