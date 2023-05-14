@@ -7,5 +7,5 @@ function redirectionQuemados() {
 }
 
 function redirectionStroke() {
-    location.href = ""
+    location.href = "protocolos-stroke.html"
 }
