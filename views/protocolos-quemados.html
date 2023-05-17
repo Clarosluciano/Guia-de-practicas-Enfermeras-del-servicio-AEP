@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="../js/protocolos-quemados.js"></script>
+    <script src="../js/redirect-links.js"></script>
 </head>
 <body>
     <header class="fix-header">
@@ -42,7 +43,7 @@
                     En la siguiente guía se indicará el manejo adecuado del paciente quemado cuando ingresa al servicio AEP.
                 </p>
                 <button class="button-main" id="BUTTON_GUIDE">Desplegar guía</button>
-                <button class="button-main" id="BUTTON_BIBLIO">Consultar bibliografía</button>
+                <button class="button-main" onclick="redirectionBiblio()" id="BUTTON_BIBLIO">Consultar bibliografía</button>
             </div>
         </section>
         <section class="section-protocols hide" id="SECTION_PROTOCOLS">

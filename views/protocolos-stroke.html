@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="../js/protocolos-stroke.js"></script>
+    <script src="../js/redirect-links.js"></script>
 </head>
 <body>
     <header class="fix-header">
@@ -42,7 +43,7 @@
                     En la siguiente guía se indicará el manejo adecuado del paciente con Stroke cuando ingresa al servicio AEP.
                 </p>
                 <button class="button-main" id="BUTTON_GUIDE">Desplegar guía</button>
-                <button class="button-main" id="BUTTON_BIBLIO">Consultar bibliografía</button>
+                <button class="button-main" onclick="redirectionBiblio()" id="BUTTON_BIBLIO">Consultar bibliografía</button>
             </div>
         </section>
         <section class="section-protocols hide" id="SECTION_PROTOCOLS">
@@ -134,41 +135,13 @@
             <section class="section" id="SECTION_FOUR">
                 <button class="button">NIHSS</button>
                 <div class="protocols-container">
-                    <ul>
-                        <li>- <strong>Extensión de las quemaduras</strong>: utilizar en adultos regla del nueve, junto con la regla de la palma de la mano.</li>
-                        <li>- <strong>Profundidad de las quemaduras:</strong>
-                            <ul>
-                                <li>○ Tipo A (primer grado, superficial).</li>
-                                <li>○ Tipo A B (segundo grado, intermedia).</li>
-                                <li>○ Tipo B (tercer grado, espesor total).</li>
-                            </ul>
-                        </li>
-                        <li>- Localización de las quemaduras.</li>
-                        <li>- Edad del paciente.</li>
-                        <li>- Gravedad.</li>
-                    </ul>
-                    <img src="../assets/img/quemados-platsul.jpg" class="protocol-img">
-                    <img src="../assets/img/areas-quemaduras.jpg" class="protocol-img">
+                    <p>Prueba</p>
                 </div>
             </section>
             <section class="section" id="SECTION_FIVE">
                 <button class="button">Calculadora NIHSS</button>
                 <div class="protocols-container">
-                    <ul>
-                        <li>- <strong>Extensión de las quemaduras</strong>: utilizar en adultos regla del nueve, junto con la regla de la palma de la mano.</li>
-                        <li>- <strong>Profundidad de las quemaduras:</strong>
-                            <ul>
-                                <li>○ Tipo A (primer grado, superficial).</li>
-                                <li>○ Tipo A B (segundo grado, intermedia).</li>
-                                <li>○ Tipo B (tercer grado, espesor total).</li>
-                            </ul>
-                        </li>
-                        <li>- Localización de las quemaduras.</li>
-                        <li>- Edad del paciente.</li>
-                        <li>- Gravedad.</li>
-                    </ul>
-                    <img src="../assets/img/quemados-platsul.jpg" class="protocol-img">
-                    <img src="../assets/img/areas-quemaduras.jpg" class="protocol-img">
+                    <iframe src="https://www.uptodate.com/contents/calculator-national-institutes-of-health-stroke-scale-nihss-score-in-adults"></iframe>
                 </div>
             </section>
         </section>

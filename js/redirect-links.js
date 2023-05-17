@@ -9,3 +9,7 @@ function redirectionQuemados() {
 function redirectionStroke() {
     location.href = "protocolos-stroke.html"
 }
+
+function redirectionBiblio() {
+    location.href = "biblio.html"
+}

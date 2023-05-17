@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="../js/protocolos-ventilador-artificial.js"></script>
+    <script src="../js/redirect-links.js"></script>
 </head>
 <body>
     <header class="fix-header">
@@ -43,7 +44,7 @@
                     la hora de tratar al paciente en Asistencia Ventilatoria Mecánica.
                 </p>
                 <button class="button-main" id="BUTTON_GUIDE">Desplegar guía</button>
-                <button class="button-main" id="BUTTON_BIBLIO">Consultar bibliografía</button>
+                <button class="button-main" onclick="redirectionBiblio()" id="BUTTON_BIBLIO">Consultar bibliografía</button>
             </div>
         </section>
         <section class="section-protocols hide" id="SECTION_PROTOCOLS">
@@ -275,6 +276,7 @@
                 <div class="protocols-container">
                     <h2>La velocidad de infusión y dosis se ajusta según indicación médica</h2>
                     <h3><u>SEDACIÓN:</u></h3>
+                    <img src="../assets/img/sedacion-analgesia.jpg" class="protocol-img">
                     <p>a- PRIMERA ELECCIÓN
                         <p>
                             <strong>MIDAZOLAM</strong><br>
@@ -292,6 +294,7 @@
                         </p>
                     </p>
                     <h3><u>ANALGESIA:</u></h3>
+                    <img src="../assets/img/sedacion-analgesia.jpg" class="protocol-img">
                     <p>a- PRIMERA ELECCIÓN
                         <p>
                             <strong>FENTANILO</strong><br>
