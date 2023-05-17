@@ -81,13 +81,6 @@ section:nth-child(1){
     display: none;
 }
 
-.protocol-img{
-    width: 80%;
-    height: 30%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
 .nihss-calcu{
     width: 100%;
     height: auto;
