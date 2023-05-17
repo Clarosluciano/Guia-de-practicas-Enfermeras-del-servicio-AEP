@@ -162,5 +162,6 @@ section:nth-child(1){
 }
 
 .selected{
-    
+    color: #FFFFFF;
+    background-color: #006bb3;
 }
