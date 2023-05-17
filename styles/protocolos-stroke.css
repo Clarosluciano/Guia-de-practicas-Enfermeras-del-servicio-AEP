@@ -81,6 +81,11 @@ section:nth-child(1){
     display: none;
 }
 
+.nihss-img{
+    width: 100%;
+    margin-bottom: 3%;
+}
+
 .nihss-section{
     width: 100%;
     height: auto;
