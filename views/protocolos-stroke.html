@@ -150,32 +150,28 @@
             <section class="section" id="SECTION_FIVE">
                 <button class="button">Calculadora NIHSS</button>
                 <div class="protocols-container">
-                    <div class="fix-result">
-                        <h2><span id="RESULT">0</span>puntos</h2>
-                        <button class="btn-reset">Resetear</button>
-                    </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section" id="NIHSS_ONE">
                         <div class="nihss-p-container">
                             <p>1.a. Nivel de conciencia</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_ONE">
-                            <button class="nihss-button selected">Alerta <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">Alerta <span>+0</span></button>
                             <button class="nihss-button">No alerta (mínimos estímulos verbales) <span>+1</span></button>
                             <button class="nihss-button">No alerta (estímulos repetidos o dolorosos) <span>+2</span></button>
                             <button class="nihss-button">Respuestas reflejas <span>+3</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_TWO">
                         <div class="nihss-p-container">
                             <p>1.b. Preguntar en qué mes está y qué edad tiene</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_TWO">
-                            <button class="nihss-button selected">Ambas respuestas<br> correctas <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">Ambas respuestas<br> correctas <span>+0</span></button>
                             <button class="nihss-button">Una respuesta<br> correcta (o disartria) <span>+1</span></button>
                             <button class="nihss-button">Ninguna respuesta<br> correcta (o afasia) <span>+2</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_THREE">
                         <div class="nihss-p-container">
                             <p>1.c. Ordenes motoras:
                                 <p>
@@ -184,142 +180,146 @@
                                 </p>
                             </p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_THREE">
-                            <button class="nihss-button selected">Ambas ordenes correctas <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">Ambas ordenes correctas <span>+0</span></button>
                             <button class="nihss-button">Una orden correcta <span>+1</span></button>
                             <button class="nihss-button">Ninguna orden correcta <span>+2</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_FOUR">
                         <div class="nihss-p-container">
                             <p>2. Mirada conjugada (horizontal)</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_FOUR">
-                            <button class="nihss-button selected">Normal <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">Normal <span>+0</span></button>
                             <button class="nihss-button">Parálisis parcial de<br> la mirada <span>+1</span></button>
                             <button class="nihss-button">Desviación forzada de<br> la mirada <span>+2</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_FIVE">
                         <div class="nihss-p-container">
                             <p>3. Campo visual</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_FIVE">
-                            <button class="nihss-button selected">Normal <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">Normal <span>+0</span></button>
                             <button class="nihss-button">Hemianopsia parcial <span>+1</span></button>
                             <button class="nihss-button">Hemianopsia completa <span>+2</span></button>
                             <button class="nihss-button">Ceguera <span>+3</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_SIX">
                         <div class="nihss-p-container">
                             <p>4. Paresia facial</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_SIX">
-                            <button class="nihss-button selected">Movilidad normal <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">Movilidad normal <span>+0</span></button>
                             <button class="nihss-button">Paresia menor <span>+1</span></button>
                             <button class="nihss-button">Paresia parcial <span>+2</span></button>
                             <button class="nihss-button">Parálisis completa de la hemicara <span>+3</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_SEVEN">
                         <div class="nihss-p-container">
                             <p>5.a. Miembro superior izquierdo</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_SEVEN">
-                            <button class="nihss-button selected">No caída del miembro <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">No caída del miembro <span>+0</span></button>
                             <button class="nihss-button">Caída en menos de 10 segundos <span>+1</span></button>
                             <button class="nihss-button">Esfuerzo contra la<br> gravedad <span>+2</span></button>
                             <button class="nihss-button">Movimiento en el plano horizontal <span>+3</span></button>
                             <button class="nihss-button">No movimiento <span>+4</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_EIGHT">
                         <div class="nihss-p-container">
                             <p>5.b. Miembro superior derecho</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_EIGHT">
-                            <button class="nihss-button selected">No caída del miembro <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">No caída del miembro <span>+0</span></button>
                             <button class="nihss-button">Caída en menos de 10 segundos <span>+1</span></button>
                             <button class="nihss-button">Esfuerzo contra la<br> gravedad <span>+2</span></button>
                             <button class="nihss-button">Movimiento en el plano horizontal <span>+3</span></button>
                             <button class="nihss-button">No movimiento <span>+4</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_NINE">
                         <div class="nihss-p-container">
                             <p>6.a. Miembro inferior izquierdo</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_NINE">
-                            <button class="nihss-button selected">No caída del miembro <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">No caída del miembro <span>+0</span></button>
                             <button class="nihss-button">Caída en menos de 5 segundos <span>+1</span></button>
                             <button class="nihss-button">Esfuerzo contra la<br> gravedad <span>+2</span></button>
                             <button class="nihss-button">Movimiento en el plano horizontal <span>+3</span></button>
                             <button class="nihss-button">No movimiento <span>+4</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_TEN">
                         <div class="nihss-p-container">
                             <p>6.b. Miembro inferior derecho</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_TEN">
-                            <button class="nihss-button selected">No caída del miembro <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">No caída del miembro <span>+0</span></button>
                             <button class="nihss-button">Caída en menos de 5 segundos <span>+1</span></button>
                             <button class="nihss-button">Esfuerzo contra la<br> gravedad <span>+2</span></button>
                             <button class="nihss-button">Movimiento en el plano horizontal <span>+3</span></button>
                             <button class="nihss-button">No movimiento <span>+4</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_ELEVEN">
                         <div class="nihss-p-container">
                             <p>7. Ataxia de miembros</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_ELEVEN">
-                            <button class="nihss-button selected">Ausente <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">Ausente <span>+0</span></button>
                             <button class="nihss-button">Presente en una<br> extremidad <span>+1</span></button>
                             <button class="nihss-button">En 2 o más extremidades <span>+2</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_TWELVE">
                         <div class="nihss-p-container">
                             <p>8. Exploración sensitiva</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_TWELVE">
-                            <button class="nihss-button selected">Normal <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">Normal <span>+0</span></button>
                             <button class="nihss-button">Perdida entre ligera<br> y moderada <span>+1</span></button>
                             <button class="nihss-button">Perdida entre grave<br> y total <span>+2</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_THIRTEEN">
                         <div class="nihss-p-container">
                             <p>9. Lenguaje</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_THIRTEEN">
-                            <button class="nihss-button selected">Normal <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">Normal <span>+0</span></button>
                             <button class="nihss-button">Afasia ligera a moderada <span>+1</span></button>
                             <button class="nihss-button">Afasia grave <span>+2</span></button>
                             <button class="nihss-button">Afasia global <span>+3</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_FOURTEEN">
                         <div class="nihss-p-container">
                             <p>10. Disartria</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_FOURTEEN">
-                            <button class="nihss-button selected">Normal <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">Normal <span>+0</span></button>
                             <button class="nihss-button">Ligera a moderada <span>+1</span></button>
                             <button class="nihss-button">Grave a anartria<span>+2</span></button>
                         </div>
                     </div>
-                    <div class="nihss-section">
+                    <div class="nihss-section hide" id="NIHSS_FIFTEEN">
                         <div class="nihss-p-container">
                             <p>11. Extición e Inatención<br> (negligencia)</p>
                         </div>
-                        <div class="nihss-btns-container" id="NIHSS_FIFTEEN">
-                            <button class="nihss-button selected">Normal <span>+0</span></button>
+                        <div class="nihss-btns-container">
+                            <button class="nihss-button">Normal <span>+0</span></button>
                             <button class="nihss-button">Extinción parcial <span>+1</span></button>
                             <button class="nihss-button">Extinción completa <span>+2</span></button>
                         </div>
+                    </div>
+                    <div class="fix-result">
+                        <h2><span id="RESULT">0</span>puntos</h2>
+                        <button class="btn-reset">Resetear</button>
                     </div>
                 </div>
             </section>

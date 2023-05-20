@@ -84,382 +84,272 @@ window.onload = function () {
     })
 
     //------------- CALCULATOR
+    //nuevo formato: que aparezca de a uno y que solo acumule.
+    let result = document.getElementById('RESULT');
+    let initial = 0;
+
     nihssOne.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[0].className === 'nihss-button selected') {
-                nihssBtn[0].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[1].className === 'nihss-button selected') {
-                nihssBtn[1].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[2].className === 'nihss-button selected') {
-                nihssBtn[2].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             } else if (nihssBtn[3].className === 'nihss-button selected') {
-                nihssBtn[3].classList.toggle('selected');
+                result.innerHTML = initial += 3;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[3].className === 'nihss-button selected') {
-                nihssBtn[3].classList.toggle('selected');
-            } else if (nihssBtn[2].className === 'nihss-button selected') {
-                nihssBtn[2].classList.toggle('selected');
-            } else if (nihssBtn[1].className === 'nihss-button selected') {
-                nihssBtn[1].classList.toggle('selected');
-            } else if (nihssBtn[0].className === 'nihss-button selected') {
-                nihssBtn[0].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssTwo.classList.remove('hide');
+                nihssOne.classList.add('hide');
+            }, 600);
         }
     })
     nihssTwo.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[4].className === 'nihss-button selected') {
-                nihssBtn[4].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[5].className === 'nihss-button selected') {
-                nihssBtn[5].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[6].className === 'nihss-button selected') {
-                nihssBtn[6].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[6].className === 'nihss-button selected') {
-                nihssBtn[6].classList.toggle('selected');
-            } else if (nihssBtn[5].className === 'nihss-button selected') {
-                nihssBtn[5].classList.toggle('selected');
-            } else if (nihssBtn[4].className === 'nihss-button selected') {
-                nihssBtn[4].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssThree.classList.remove('hide');
+                nihssTwo.classList.add('hide');
+            }, 600);
         }
     })
     nihssThree.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[7].className === 'nihss-button selected') {
-                nihssBtn[7].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[8].className === 'nihss-button selected') {
-                nihssBtn[8].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[9].className === 'nihss-button selected') {
-                nihssBtn[9].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[9].className === 'nihss-button selected') {
-                nihssBtn[9].classList.toggle('selected');
-            } else if (nihssBtn[8].className === 'nihss-button selected') {
-                nihssBtn[8].classList.toggle('selected');
-            } else if (nihssBtn[7].className === 'nihss-button selected') {
-                nihssBtn[7].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssFour.classList.remove('hide');
+                nihssThree.classList.add('hide');
+            }, 600);
         }
     })
     nihssFour.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[10].className === 'nihss-button selected') {
-                nihssBtn[10].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[11].className === 'nihss-button selected') {
-                nihssBtn[11].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[12].className === 'nihss-button selected') {
-                nihssBtn[12].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[12].className === 'nihss-button selected') {
-                nihssBtn[12].classList.toggle('selected');
-            } else if (nihssBtn[11].className === 'nihss-button selected') {
-                nihssBtn[11].classList.toggle('selected');
-            } else if (nihssBtn[10].className === 'nihss-button selected') {
-                nihssBtn[10].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssFive.classList.remove('hide');
+                nihssFour.classList.add('hide');
+            }, 600);
         }
     })
     nihssFive.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[13].className === 'nihss-button selected') {
-                nihssBtn[13].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[14].className === 'nihss-button selected') {
-                nihssBtn[14].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[15].className === 'nihss-button selected') {
-                nihssBtn[15].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             } else if (nihssBtn[16].className === 'nihss-button selected') {
-                nihssBtn[16].classList.toggle('selected');
+                result.innerHTML = initial += 3;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[16].className === 'nihss-button selected') {
-                nihssBtn[16].classList.toggle('selected');
-            } else if (nihssBtn[15].className === 'nihss-button selected') {
-                nihssBtn[15].classList.toggle('selected');
-            } else if (nihssBtn[14].className === 'nihss-button selected') {
-                nihssBtn[14].classList.toggle('selected');
-            } else if (nihssBtn[13].className === 'nihss-button selected') {
-                nihssBtn[13].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssSix.classList.remove('hide');
+                nihssFive.classList.add('hide');
+            }, 600);
         }
     })
     nihssSix.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[17].className === 'nihss-button selected') {
-                nihssBtn[17].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[18].className === 'nihss-button selected') {
-                nihssBtn[18].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[19].className === 'nihss-button selected') {
-                nihssBtn[19].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             } else if (nihssBtn[20].className === 'nihss-button selected') {
-                nihssBtn[20].classList.toggle('selected');
+                result.innerHTML = initial += 3;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[20].className === 'nihss-button selected') {
-                nihssBtn[20].classList.toggle('selected');
-            } else if (nihssBtn[19].className === 'nihss-button selected') {
-                nihssBtn[19].classList.toggle('selected');
-            } else if (nihssBtn[18].className === 'nihss-button selected') {
-                nihssBtn[18].classList.toggle('selected');
-            } else if (nihssBtn[17].className === 'nihss-button selected') {
-                nihssBtn[17].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssSeven.classList.remove('hide');
+                nihssSix.classList.add('hide');
+            }, 600);
         }
     })
     nihssSeven.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[21].className === 'nihss-button selected') {
-                nihssBtn[21].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[22].className === 'nihss-button selected') {
-                nihssBtn[22].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[23].className === 'nihss-button selected') {
-                nihssBtn[23].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             } else if (nihssBtn[24].className === 'nihss-button selected') {
-                nihssBtn[24].classList.toggle('selected');
+                result.innerHTML = initial += 3;
             } else if (nihssBtn[25].className === 'nihss-button selected') {
-                nihssBtn[25].classList.toggle('selected');
+                result.innerHTML = initial += 4;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[25].className === 'nihss-button selected') {
-                nihssBtn[25].classList.toggle('selected');
-            } else if (nihssBtn[24].className === 'nihss-button selected') {
-                nihssBtn[24].classList.toggle('selected');
-            } else if (nihssBtn[23].className === 'nihss-button selected') {
-                nihssBtn[23].classList.toggle('selected');
-            } else if (nihssBtn[22].className === 'nihss-button selected') {
-                nihssBtn[22].classList.toggle('selected');
-            } else if (nihssBtn[21].className === 'nihss-button selected') {
-                nihssBtn[21].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssEight.classList.remove('hide');
+                nihssSeven.classList.add('hide');
+            }, 600);
         }
     })
     nihssEight.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[26].className === 'nihss-button selected') {
-                nihssBtn[26].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[27].className === 'nihss-button selected') {
-                nihssBtn[27].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[28].className === 'nihss-button selected') {
-                nihssBtn[28].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             } else if (nihssBtn[29].className === 'nihss-button selected') {
-                nihssBtn[29].classList.toggle('selected');
+                result.innerHTML = initial += 3;
             } else if (nihssBtn[30].className === 'nihss-button selected') {
-                nihssBtn[30].classList.toggle('selected');
+                result.innerHTML = initial += 4;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[30].className === 'nihss-button selected') {
-                nihssBtn[30].classList.toggle('selected');
-            } else if (nihssBtn[29].className === 'nihss-button selected') {
-                nihssBtn[29].classList.toggle('selected');
-            } else if (nihssBtn[28].className === 'nihss-button selected') {
-                nihssBtn[28].classList.toggle('selected');
-            } else if (nihssBtn[27].className === 'nihss-button selected') {
-                nihssBtn[27].classList.toggle('selected');
-            } else if (nihssBtn[26].className === 'nihss-button selected') {
-                nihssBtn[26].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssNine.classList.remove('hide');
+                nihssEight.classList.add('hide');
+            }, 600);
         }
     })
     nihssNine.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[31].className === 'nihss-button selected') {
-                nihssBtn[31].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[32].className === 'nihss-button selected') {
-                nihssBtn[32].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[33].className === 'nihss-button selected') {
-                nihssBtn[33].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             } else if (nihssBtn[34].className === 'nihss-button selected') {
-                nihssBtn[34].classList.toggle('selected');
+                result.innerHTML = initial += 3;
             } else if (nihssBtn[35].className === 'nihss-button selected') {
-                nihssBtn[35].classList.toggle('selected');
+                result.innerHTML = initial += 4;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[35].className === 'nihss-button selected') {
-                nihssBtn[35].classList.toggle('selected');
-            } else if (nihssBtn[34].className === 'nihss-button selected') {
-                nihssBtn[34].classList.toggle('selected');
-            } else if (nihssBtn[33].className === 'nihss-button selected') {
-                nihssBtn[33].classList.toggle('selected');
-            } else if (nihssBtn[32].className === 'nihss-button selected') {
-                nihssBtn[32].classList.toggle('selected');
-            } else if (nihssBtn[31].className === 'nihss-button selected') {
-                nihssBtn[31].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssTen.classList.remove('hide');
+                nihssNine.classList.add('hide');
+            }, 600);
         }
     })
     nihssTen.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[36].className === 'nihss-button selected') {
-                nihssBtn[36].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[37].className === 'nihss-button selected') {
-                nihssBtn[37].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[38].className === 'nihss-button selected') {
-                nihssBtn[38].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             } else if (nihssBtn[39].className === 'nihss-button selected') {
-                nihssBtn[39].classList.toggle('selected');
+                result.innerHTML = initial += 3;
             } else if (nihssBtn[40].className === 'nihss-button selected') {
-                nihssBtn[40].classList.toggle('selected');
+                result.innerHTML = initial += 4;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[40].className === 'nihss-button selected') {
-                nihssBtn[40].classList.toggle('selected');
-            } else if (nihssBtn[39].className === 'nihss-button selected') {
-                nihssBtn[39].classList.toggle('selected');
-            } else if (nihssBtn[38].className === 'nihss-button selected') {
-                nihssBtn[38].classList.toggle('selected');
-            } else if (nihssBtn[37].className === 'nihss-button selected') {
-                nihssBtn[37].classList.toggle('selected');
-            } else if (nihssBtn[36].className === 'nihss-button selected') {
-                nihssBtn[36].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssEleven.classList.remove('hide');
+                nihssTen.classList.add('hide');
+            }, 600);
         }
     })
     nihssEleven.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[41].className === 'nihss-button selected') {
-                nihssBtn[41].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[42].className === 'nihss-button selected') {
-                nihssBtn[42].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[43].className === 'nihss-button selected') {
-                nihssBtn[43].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[43].className === 'nihss-button selected') {
-                nihssBtn[43].classList.toggle('selected');
-            } else if (nihssBtn[42].className === 'nihss-button selected') {
-                nihssBtn[42].classList.toggle('selected');
-            } else if (nihssBtn[41].className === 'nihss-button selected') {
-                nihssBtn[41].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssTwelve.classList.remove('hide');
+                nihssEleven.classList.add('hide');
+            }, 600);
         }
     })
     nihssTwelve.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[44].className === 'nihss-button selected') {
-                nihssBtn[44].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[45].className === 'nihss-button selected') {
-                nihssBtn[45].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[46].className === 'nihss-button selected') {
-                nihssBtn[46].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[46].className === 'nihss-button selected') {
-                nihssBtn[46].classList.toggle('selected');
-            } else if (nihssBtn[45].className === 'nihss-button selected') {
-                nihssBtn[45].classList.toggle('selected');
-            } else if (nihssBtn[44].className === 'nihss-button selected') {
-                nihssBtn[44].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssThirteen.classList.remove('hide');
+                nihssTwelve.classList.add('hide');
+            }, 600);
         }
     })
     nihssThirteen.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[47].className === 'nihss-button selected') {
-                nihssBtn[47].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[48].className === 'nihss-button selected') {
-                nihssBtn[48].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[49].className === 'nihss-button selected') {
-                nihssBtn[49].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             } else if (nihssBtn[50].className === 'nihss-button selected') {
-                nihssBtn[50].classList.toggle('selected');
+                result.innerHTML = initial += 3;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[50].className === 'nihss-button selected') {
-                nihssBtn[50].classList.toggle('selected');
-            } else if (nihssBtn[49].className === 'nihss-button selected') {
-                nihssBtn[49].classList.toggle('selected');
-            } else if (nihssBtn[48].className === 'nihss-button selected') {
-                nihssBtn[48].classList.toggle('selected');
-            } else if (nihssBtn[47].className === 'nihss-button selected') {
-                nihssBtn[47].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssFourteen.classList.remove('hide');
+                nihssThirteen.classList.add('hide');
+            }, 600);
         }
     })
     nihssFourteen.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[51].className === 'nihss-button selected') {
-                nihssBtn[51].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[52].className === 'nihss-button selected') {
-                nihssBtn[52].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[53].className === 'nihss-button selected') {
-                nihssBtn[53].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[53].className === 'nihss-button selected') {
-                nihssBtn[53].classList.toggle('selected');
-            } else if (nihssBtn[52].className === 'nihss-button selected') {
-                nihssBtn[52].classList.toggle('selected');
-            } else if (nihssBtn[51].className === 'nihss-button selected') {
-                nihssBtn[51].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                nihssFifteen.classList.remove('hide');
+                nihssFourteen.classList.add('hide');
+            }, 600);
         }
     })
     nihssFifteen.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'nihss-button') {
             e.target.classList.toggle('selected');
             if (nihssBtn[54].className === 'nihss-button selected') {
-                nihssBtn[54].classList.toggle('selected');
+                result.innerHTML = initial += 0;
             } else if (nihssBtn[55].className === 'nihss-button selected') {
-                nihssBtn[55].classList.toggle('selected');
+                result.innerHTML = initial += 1;
             } else if (nihssBtn[56].className === 'nihss-button selected') {
-                nihssBtn[56].classList.toggle('selected');
+                result.innerHTML = initial += 2;
             }
-        }
-        if (e.target && e.target.className === 'nihss-button') {
-            e.target.classList.toggle('selected');
-            if (nihssBtn[56].className === 'nihss-button selected') {
-                nihssBtn[56].classList.toggle('selected');
-            } else if (nihssBtn[55].className === 'nihss-button selected') {
-                nihssBtn[55].classList.toggle('selected');
-            } else if (nihssBtn[54].className === 'nihss-button selected') {
-                nihssBtn[54].classList.toggle('selected');
-            }
+            setTimeout(() => {
+                //finalResult.classList.remove('hide');
+                nihssFifteen.classList.add('hide');
+            }, 600);
         }
     })
 }

@@ -78,13 +78,13 @@ section:nth-child(1){
 }
 
 .protocols-container{
+    width: 100%;
     display: none;
 }
 
 .fix-result{
     width: 100%;
     height: 115px;
-    position: fixed;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -124,13 +124,9 @@ section:nth-child(1){
 .nihss-section{
     width: 100%;
     height: auto;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     display: flex;
-}
-
-.nihss-section:nth-child(16){
-    margin-bottom: 20%;
 }
 
 .nihss-p-container{
