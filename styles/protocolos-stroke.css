@@ -129,6 +129,20 @@ section:nth-child(1){
     display: flex;
 }
 
+.final-result{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.final-result h2{
+    font-size: 44px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: #006bb3;
+}
+
 .nihss-p-container{
     width: 35%;
     margin-left: 2%;

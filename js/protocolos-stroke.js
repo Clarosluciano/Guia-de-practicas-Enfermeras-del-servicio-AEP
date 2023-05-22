@@ -28,7 +28,11 @@ window.onload = function () {
     let nihssFourteen = document.getElementById('NIHSS_FOURTEEN');
     let nihssFifteen = document.getElementById('NIHSS_FIFTEEN');
 
+    let finalResult = document.getElementById('FINAL_RESULT');
+    let nihssSection = document.getElementsByClassName('nihss-section');
+    let divResult = document.getElementById('DIV_RESULT');
     let nihssBtn = document.getElementsByClassName('nihss-button');
+    let btnReset = document.getElementsByClassName('btn-reset');
 
     //------------- LISTENERS
     sectionMain.addEventListener('click', (e) => {
@@ -84,7 +88,6 @@ window.onload = function () {
     })
 
     //------------- CALCULATOR
-    //nuevo formato: que aparezca de a uno y que solo acumule.
     let result = document.getElementById('RESULT');
     let initial = 0;
 
@@ -347,9 +350,25 @@ window.onload = function () {
                 result.innerHTML = initial += 2;
             }
             setTimeout(() => {
-                //finalResult.classList.remove('hide');
+                finalResult.classList.remove('hide');
                 nihssFifteen.classList.add('hide');
             }, 600);
+        }
+    })
+    divResult.addEventListener('click', (e) => {
+        if (e.target && e.target.className === 'btn-reset') {
+            initial = 0;
+            result.innerHTML = 0;
+            for (let i = 0; i < nihssSection.length; i++) {
+                if (nihssSection[i].className === 'nihss-section') {
+                    nihssSection[i].classList.add('hide');
+                }
+            }
+            for (let i = 0; i < nihssBtn.length; i++) {
+                nihssBtn[i].classList.remove('selected');
+            }
+            finalResult.classList.add('hide');
+            nihssSection[0].classList.remove('hide');
         }
     })
 }
