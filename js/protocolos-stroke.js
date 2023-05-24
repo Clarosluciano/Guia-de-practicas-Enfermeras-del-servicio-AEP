@@ -45,6 +45,9 @@ window.onload = function () {
         if (e.target && e.target.className === 'button') {
             protocolsContainer[0].classList.add('active');
             e.target.classList.add('button-little');
+            if (button[0].className === 'button button-little') {
+                button[0].style.margin = "2.6% 0% 0% 0%";
+            }
         } else if (e.target && e.target.className === 'button button-little') {
             protocolsContainer[0].classList.remove('active');
             button[0].classList.remove('button-little');
