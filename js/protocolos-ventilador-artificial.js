@@ -1,5 +1,9 @@
 window.onload = function () {
     //------------- ELEMENTS
+    let nav = document.getElementById('nav');
+    let openMenu = document.querySelector('#open');
+    let closeMenu = document.getElementById('close');
+
     let sectionMain = document.querySelector('.section-main');
     let sectionProtocols = document.querySelector('.section-protocols');
 
@@ -21,6 +25,15 @@ window.onload = function () {
     let protocolsContainer = document.getElementsByClassName('protocols-container');
 
     //------------- LISTENERS
+    openMenu.addEventListener("click", () => {
+        console.log('hola')
+        nav.classList.remove("hide-menu");
+    });
+
+    closeMenu.addEventListener("click", () => {
+        nav.classList.add("hide-menu");
+    });
+
     sectionMain.addEventListener('click', (e) => {
         if (e.target && e.target.id === 'BUTTON_GUIDE') {
             sectionMain.classList.add('hide');

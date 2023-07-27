@@ -1,5 +1,9 @@
 window.onload = function () {
     //------------- ELEMENTS
+    let nav = document.getElementById('nav');
+    let openMenu = document.querySelector('#open');
+    let closeMenu = document.getElementById('close');
+
     let sectionOne = document.getElementById('SECTION_ONE');
     let sectionTwo = document.getElementById('SECTION_TWO');
     let sectionThree = document.getElementById('SECTION_THREE');
@@ -9,6 +13,15 @@ window.onload = function () {
     let protocolsContainer = document.getElementsByClassName('protocols-container');
 
     //------------- LISTENERS
+    openMenu.addEventListener("click", () => {
+        console.log('hola')
+        nav.classList.remove("hide-menu");
+    });
+
+    closeMenu.addEventListener("click", () => {
+        nav.classList.add("hide-menu");
+    });
+
     sectionOne.addEventListener('click', (e) => {
         if (e.target && e.target.className === 'button') {
             protocolsContainer[0].classList.add('active');
