@@ -70,8 +70,8 @@ embed{
 .container{
     width: 80%;
     height: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
