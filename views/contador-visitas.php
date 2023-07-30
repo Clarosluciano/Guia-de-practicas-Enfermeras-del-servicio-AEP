@@ -1,3 +1,18 @@
+<?php include ("conection/conection.php");
+
+//COUNT
+if ($_COOKIE['MIS_VISITAS'] != 'OK'){
+    setcookie('MIS VISITAS', 'OK', time()+(60*60*24*365));
+
+    $ip = $_SERVER['REMOTE_ADDR'];
+
+    $query = 'INSET INTO visitas (ip)
+    VALUES (\''.$ip.'\')';
+    mysqli_query($conection, $query);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +32,13 @@
     <script src="../js/index.js"></script>
 </head>
 <body>
+<?php
+
+$query = mysqli_query($conection, "SELECT COUNT(*) AS 'total' FROM 'visitas'");
+if($row = mysqli_fetch_assoc($query)){}
+
+
+?>
     <header class="fix-header">
         <div class="header-items">
             <a href="https://www.fundacionheca.org.ar/hospital/" target="_blank">
@@ -40,7 +62,7 @@
         <section class="section-main">
             <div class="container">
                 <h1>Visitas registradas</h1>
-                <h1>0</h1>
+                <h1><?php echo $row["total"]; ?></h1>
             </div>
         </section>
     </main>
