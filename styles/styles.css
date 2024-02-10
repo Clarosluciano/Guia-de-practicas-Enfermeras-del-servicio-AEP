@@ -3,6 +3,18 @@ html, body{
     height: 100%;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 strong, b {
     font-weight: bold;
 }
@@ -21,7 +33,7 @@ embed{
 
 .section-main{
     width: 100%;
-    height: 50rem;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -69,7 +81,7 @@ embed{
 
 .container{
     width: 80%;
-    height: auto;
+    height: 75%;
     margin-top: 3rem;
     margin-bottom: 3rem;
     display: flex;
@@ -92,10 +104,10 @@ embed{
 }
 
 .button-main{
-    width: 40%;
-    height: 50px;
-    margin-top: 5.6%;
-    margin-bottom: 5.6%;
+    width: 9rem;
+    height: 4rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
     cursor: pointer;
     border-width: 0.5px;
     border-radius: 20px;
